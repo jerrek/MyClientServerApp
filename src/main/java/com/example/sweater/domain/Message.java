@@ -15,6 +15,16 @@ public class Message {
     @JoinColumn(name = "user_id")
     private User author;
 
+    private String fileName;
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
     public Message() {
     }
 
